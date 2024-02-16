@@ -1,0 +1,25 @@
+.info__svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--gray);
+}
+
+.info__symbol {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.info__list {
+    display: flex;
+    padding: 32px;
+}
+
+.info__box {
+    margin-top: 5px;
+    margin-right: 15px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

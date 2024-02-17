@@ -1,10 +1,12 @@
-import { initMapContacts } from "./modules/initMapContacts";
-import { contactsSlider } from "./modules/contactsSlider";
-import { mapTitleInit, maskMapInit } from "./modules/mapTitle";
+import { mapContactsInit } from "./modules/mapContactsInit";
+import { contactsSliderInit } from "./modules/contactsSliderInit";
+import { mapTitleInit } from "./modules/mapTitleInit";
+import { teamsSliderInit } from "./modules/teamsSliderInit";
 
 function handleDOMContentLoaded() {
-  initMapContacts();
-  contactsSlider();
+  mapContactsInit();
+  contactsSliderInit();
   mapTitleInit();
+  teamsSliderInit();
 }
 addEventListener("DOMContentLoaded", handleDOMContentLoaded);

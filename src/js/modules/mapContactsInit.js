@@ -1,4 +1,4 @@
-export async function initMapContacts() {
+export async function mapContactsInit() {
   const mapExist = document.getElementById("contacts-map");
   if (mapExist) {
     await ymaps3.ready;

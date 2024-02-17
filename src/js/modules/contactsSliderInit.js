@@ -1,7 +1,7 @@
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
-export function contactsSlider() {
+export function contactsSliderInit() {
   const swiperElement = document.querySelector(".contacts__slider.swiper");
 
   if (swiperElement) {

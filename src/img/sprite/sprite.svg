@@ -21,6 +21,9 @@
 
     <symbol viewBox="0 -960 960 960" id="icon__arrow">
         <path d="M640-80 240-480l400-400 71 71-329 329 329 329-71 71Z" />
-</svg>
-</symbol>
+    </symbol>
+
+    <symbol viewBox="0 -960 960 960" id="icon__done">
+        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+    </symbol>
 </svg>

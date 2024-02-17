@@ -3,6 +3,7 @@
         margin-top: 32px;
     }
 }
+
 .teams__strong {
     font-weight: 600;
     font-size: 16px;
@@ -14,6 +15,11 @@
     font-size: 14px;
     line-height: 20px;
     margin-top: 8px;
+}
+
+.teams__figure {
+    display: grid;
+    min-height: 528px;
 }
 
 .teams__slider {
@@ -33,4 +39,10 @@
     border-left: 1px solid var(--extra_grey);
     border-right: 1px solid var(--extra_grey);
     border-bottom: 1px solid var(--extra_grey);
+}
+
+@media (min-width: map-get($laptop, md)) and (max-width: map-get($laptop, tg)) {
+    .teams__image {
+        display: block;
+    }
 }

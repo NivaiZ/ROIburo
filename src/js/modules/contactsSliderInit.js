@@ -6,8 +6,6 @@ export function contactsSliderInit() {
 
   if (swiperElement) {
     const swiper = new Swiper(swiperElement, {
-      slidesPerView: 3,
-      spaceBetween: 40,
       grabCursor: true,
       freeMode: true,
       navigation: {
@@ -16,6 +14,20 @@ export function contactsSliderInit() {
       },
       scrollbar: {
         el: ".contacts__slider .swiper-scrollbar",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1.25,
+          spaceBetween: 5,
+        },
+        1440: {
+          spaceBetween: 24,
+          slidesPerView: 3,
+        },
+        1920: {
+          spaceBetween: 40,
+          slidesPerView: 3,
+        },
       },
     });
   }

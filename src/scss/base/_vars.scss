@@ -1,7 +1,4 @@
 :root {
-	--container-width: 1200px;
-	--container-padding: 15px;
-
 	--font-main: "Montserrat", sans-serif;
 
 	--black_60: #28282899;
@@ -13,7 +10,18 @@
 	--gray_95: #F2F2F2;
 	--extra_grey: #D9D9D9;
 	--extra_gray: #FAFAFA;
-	--laptop-size: 1199px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
 }
+
+
+$tablet: (
+	'sm': 640px,
+	'md': 768px,
+	'lg': 1024px,
+);
+
+$laptop: (
+	'sm': 1280px,
+	'md': 1440px,
+	'lg': 1680px,
+	'tg': 1920px,
+);

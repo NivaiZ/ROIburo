@@ -6,13 +6,25 @@ export function teamsSliderInit() {
 
   if (swiperElement) {
     const swiper = new Swiper(swiperElement, {
-      slidesPerView: 4,
       spaceBetween: 40,
       grabCursor: true,
       freeMode: true,
       navigation: {
         nextEl: ".heading__item--flex .swiper__next",
         prevEl: ".heading__item--flex .swiper__prev",
+      },
+      breakpoints: {
+        // 320: {
+        //   slidesPerView: 4,
+        //   spaceBetween: 6,
+        // },
+        1440: {
+          spaceBetween: 24,
+          slidesPerView: 3.172,
+        },
+        1920: {
+          slidesPerView: 4,
+        },
       },
     });
   }

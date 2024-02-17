@@ -30,3 +30,10 @@
     line-height: 24px;
     white-space: pre-line;
 }
+
+@media (min-width: map-get($tablet, md)) and (max-width: map-get($laptop, md) - 1) {
+    .heading__h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}

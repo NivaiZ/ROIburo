@@ -24,3 +24,9 @@
 .breadcrumbs__navigation--noactive {
     color: var(--black_60);
 }
+
+@media (min-width: map-get($tablet, md)) and (max-width: map-get($laptop, md) - 1) {
+  .breadcrumbs-container {
+    margin-top: 49px;
+  }
+}

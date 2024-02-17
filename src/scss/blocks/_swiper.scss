@@ -1,0 +1,57 @@
+.swiper__style {
+
+    .swiper__prev,
+    .swiper__next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+
+        &:hover {
+            border: 1px solid var(--green);
+
+            .swiper__svg {
+                fill: var(--green);
+            }
+        }
+
+        .swiper__svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--extra_grey);
+            stroke: var(--extra_grey);
+        }
+
+        .swiper__next--transform {
+            transform: rotate(180deg);
+        }
+    }
+
+    
+    .swiper__svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--extra_grey);
+        stroke: var(--extra_grey);
+    }
+
+    .swiper__next--transform {
+        transform: rotate(180deg);
+    }
+
+    .swiper__item {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.swiper__list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}

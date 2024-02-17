@@ -2,10 +2,6 @@
     margin-top: 24px;
 }
 
-.contacts__map {
-    height: 728px;
-}
-
 .contacts__copy {
     display: flex;
     justify-content: center;
@@ -31,13 +27,11 @@
 }
 
 .contacts__map {
+    margin-top: 55px;
+    height: 728px;
     canvas {
         filter: grayscale(1);
     }
-}
-
-.contacts__map {
-    margin-top: 58px;
 }
 
 .contacts__box {
@@ -45,6 +39,7 @@
 }
 
 .contacts__info {
+    z-index: 2;
     position: absolute;
     top: 54px;
     left: 58px;
@@ -53,8 +48,8 @@
 
 .contacts__inner {
     display: grid;
-    gap: 26px;
-    padding: 56px 78px 62px 53px;
+    gap: 27px;
+    padding: 56px 26px 52px 53px;
 }
 
 .contacts__city {
@@ -159,7 +154,7 @@
 
 .contacts__wrapper {
     position: absolute;
-    top: 48px;
+    top: 57px;
     right: 55px;
     background-color: var(--white);
     max-width: 644px;
@@ -196,53 +191,9 @@
         position: static;
     }
 
-    .swiper__prev,
-    .swiper__next {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 56px;
-        height: 56px;
-
-        &:hover {
-            border: 1px solid var(--green);
-
-            .swiper__svg {
-                fill: var(--green);
-            }
-        }
-    }
-
-    .swiper__list {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex: 1;
-
-    }
-
     .swiper__inner {
         display: flex;
         align-items: center;
-        margin-top: 28px;
-    }
-
-    .swiper__svg {
-        width: 24px;
-        height: 24px;
-        fill: var(--extra_grey);
-        stroke: var(--extra_grey);
-    }
-
-    .swiper__next--transform {
-        transform: rotate(180deg);
-    }
-
-    .swiper__item {
-        margin-right: 15px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+        margin-top: 31px;
     }
 }

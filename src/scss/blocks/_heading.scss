@@ -4,3 +4,29 @@
     line-height: 68px;
     color: var(--black_heading);
 }
+
+.heading__h3 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.heading__sign {
+    display: block;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    white-space: pre-line;
+}
+
+.heading__item--flex {
+    display: flex;
+    align-items: center;
+}
+
+.heading__h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: pre-line;
+}

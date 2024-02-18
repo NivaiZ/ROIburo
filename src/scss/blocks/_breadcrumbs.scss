@@ -30,3 +30,10 @@
     margin-top: 49px;
   }
 }
+
+@media (max-width: map-get($tablet, md) - 1) {
+    .breadcrumbs__navigation {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

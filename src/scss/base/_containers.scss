@@ -4,6 +4,12 @@
 	margin-right: auto;
 }
 
+@media (max-width: map-get($tablet, md) - 1) { 
+	.container {
+		padding: 0 12px 0 12px;
+	}
+}
+
 @media (min-width: map-get($laptop, md)) and (max-width: map-get($laptop, tg) - 1) { 
 	.container {
 		padding: 0 72px 0 72px;

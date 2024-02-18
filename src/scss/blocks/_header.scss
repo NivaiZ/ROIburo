@@ -1,0 +1,31 @@
+.header {
+	background-color: var(--footer_color);
+	padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+	.nav__sign {
+        font-size: 26px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: map-get($tablet, md) - 1) {
+    .header {
+        padding: 15px;
+    }
+}
+
+@media (min-width: map-get($tablet, md)) and (max-width: map-get($laptop, md) - 1) {
+    .header {
+        padding: 51px;
+    }
+}
+
+@media (min-width: map-get($laptop, md)) and (max-width: map-get($laptop, lg) - 1) {
+    .header {
+        padding: 95px;
+    }
+}

@@ -204,7 +204,7 @@
     }
 }
 
-@media (min-width: map-get($laptop, md)) and (max-width: map-get($laptop, tg)) {
+@media (min-width: map-get($laptop, md)) and (max-width: map-get($laptop, tg) -1) {
     .contacts__wrapper {
         max-width: 510px;
         top: 40px;
@@ -253,7 +253,6 @@
     .contacts__map {
         height: 400px;
         margin-top: 40px;
-        border: 1px solid black;
     }
 
     .contacts__map--noactive {
@@ -315,11 +314,6 @@
     .contacts__slider.swiper.swiper-initialized {
         margin: 99px 0 108px 0;
 
-        .swiper__image {
-            width: unset;
-            max-width: unset;
-        }
-
         .swiper__list {
             display: none;
         }
@@ -328,5 +322,100 @@
             margin-top: 40px;
         }
 
+    }
+}
+
+@media (max-width: map-get($tablet, md) - 1) {
+
+    .contacts__head {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 6px;
+    }
+
+    .contacts__heading {
+        margin-top: 40px;
+    }
+
+    .contacts__map {
+        margin-top: 32px;
+    }
+
+    .contacts__map {
+        height: 280px;
+    }
+
+    .contacts__inner {
+        background-color: var(--extra_gray);
+        padding: 16px;
+        gap: 7px;
+    }
+
+    .contacts__info {
+        position: static;
+        order: 1;
+    }
+
+    .contacts__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts__wrapper {
+        background-color: var(--extra_gray);
+        position: static;
+        margin: 24px 0 24px 0;
+    }
+
+    .contacts__dynamic {
+        flex-direction: row-reverse;
+    }
+
+    .button__item {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .button__link {
+        width: 100%;
+    }
+
+    .contacts__button {
+        margin-top: 32px;
+        flex-direction: column;
+    }
+
+    .contacts__map--noactive {
+
+        &::before,
+        &::after {
+            content: none;
+        }
+    }
+
+    .contacts__slider.swiper.swiper-initialized {
+        margin: 42px 0 64px 0;
+
+        .swiper__list {
+            display: none;
+        }
+
+        .swiper__image {
+            height: 252px;
+        }
+
+        .swiper__inner {
+            margin-top: 26px;
+        }
+
+        .swiper-scrollbar-drag {
+            height: 4px;
+        }
+    }
+}
+
+@media (min-width: map-get($tablet, md)) {
+    .contacts__dynamic {
+        display: none;
     }
 }

@@ -6,18 +6,32 @@
     <div class="contacts__info">
         <div class="contacts__inner">
             <strong class="contacts__head">Контакты</strong>
+
             <ul class="contacts__list contacts__phone">
-                <li class="contacts__link">
-                    <a class="contacts__bold" href="tel:+79000000000" aria-label="Ссылка на телефон">8-900-000-00-00</a>
-                    <span class="contacts__city">Москва</span>
-                </li>
 
                 <li class="contacts__link">
+                    <a class="contacts__bold" href="tel:+79000000000" aria-label="Ссылка на телефон">8-900-000-00-00</a>
+                    <span class="contacts__city" data-copy="text">Москва</span>
+                </li>
+
+                <li class="contacts__link" data-da=".contacts__dynamic, 767, 2">
                     <a class="contacts__bold" href="tel:+79000000000" aria-label="Ссылка на телефон">8-900-000-00-00</a>
                     <span class="contacts__city" data-copy="text">Россия</span>
                 </li>
 
                 <li class="contacts__link">
+                    <button class="contacts__copy" type="button" data-change="copy"
+                        aria-label="Скопировать в буфер обмена">
+                        <svg class="contacts__svg">
+                            <use xlink:href="./img/sprite/sprite.svg#icon__copy"></use>
+                        </svg>
+                    </button>
+                </li>
+
+            </ul>
+
+            <ul class="contacts__list contacts__dynamic">
+                <li class="contacts__link contacts__link--phone">
                     <button class="contacts__copy" type="button" data-change="copy"
                         aria-label="Скопировать в буфер обмена">
                         <svg class="contacts__svg">
@@ -98,35 +112,36 @@
 
 <div class="contacts__slider swiper swiper__style">
     <h2 class="visually-hidden">Слайдер компании</h2>
-    <ul class="swiper-wrapper">
+    <div class="swiper-wrapper">
 
-        <li class="swiper-slide">
+        <div class="swiper-slide">
             <figure class="swiper__picture">
                 <img class="swiper__image" src="../../img/contacts/contacts__image--one.png" alt="Фото офиса с людьми">
             </figure>
-        </li>
+        </div>
 
-        <li class="swiper-slide">
+        <div class="swiper-slide">
             <figure class="swiper__picture">
                 <img class="swiper__image" src="../../img/contacts/contacts__image--two.png" alt="Фото коридора офиса">
             </figure>
-        </li>
+        </div>
 
-        <li class="swiper-slide">
+        <div class="swiper-slide">
             <figure class="swiper__picture">
                 <img class="swiper__image" src="../../img/contacts/contacts__image--three.png" alt="Фото кабинета">
             </figure>
-        </li>
+        </div>
 
-        <li class="swiper-slide">
+        <div class="swiper-slide">
             <figure class="swiper__picture">
                 <img class="swiper__image" src="../../img/contacts/contacts__image--four.png"
                     alt="Фото кабинета со столом">
             </figure>
-        </li>
-    </ul>
+        </div>
+    </div>
     <div class="swiper__inner">
         <div class="swiper-scrollbar"></div>
+
         <ul class="swiper__list">
             <li class="swiper__item">
                 <button class="swiper__prev" type="button" aria-label="Кнопка пролистывания назад">

@@ -3,6 +3,7 @@ import { contactsSliderInit } from "./modules/contactsSliderInit";
 import { mapTitleInit } from "./modules/mapTitleInit";
 import { teamsSliderInit } from "./modules/teamsSliderInit";
 import { copyTextClipboardInit } from "./modules/copyTextClipboard";
+import { useDynamicAdapt } from "./modules/dynamic-adapt";
 
 function handleDOMContentLoaded() {
   mapContactsInit();
@@ -10,5 +11,6 @@ function handleDOMContentLoaded() {
   mapTitleInit();
   teamsSliderInit();
   copyTextClipboardInit();
+  useDynamicAdapt("max");
 }
 addEventListener("DOMContentLoaded", handleDOMContentLoaded);

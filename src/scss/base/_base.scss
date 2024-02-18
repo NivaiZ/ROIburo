@@ -4,6 +4,18 @@ html {
 
 body {
 	color: var(--black_heading);
-    font-family: var(--font-main);
+	font-family: var(--font-main);
 	font-weight: 400;
+
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+		background-color: var(--green);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--green);
+		border-radius: 9em;
+		box-shadow: inset 1px 1px 10px var(--primary_green);
+	}
 }

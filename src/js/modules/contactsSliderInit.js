@@ -16,9 +16,21 @@ export function contactsSliderInit() {
         el: ".contacts__slider .swiper-scrollbar",
       },
       breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 24,
+        },
+        376: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
         768: {
           slidesPerView: 1.25,
-          spaceBetween: 5,
+          spaceBetween: 24,
+        },
+        800: {
+          slidesPerView: 2,
+          spaceBetween: 24,
         },
         1440: {
           spaceBetween: 24,

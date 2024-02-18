@@ -9,10 +9,13 @@
 	--primary_green: #E5F6EE;
 	--gray_95: #F2F2F2;
 	--extra_grey: #D9D9D9;
+	--footer_color: rgb(195, 220, 231);
 	--extra_gray: #FAFAFA;
 }
 
-
+$mobile: (
+	'sm': 375px
+);
 $tablet: (
 	'sm': 640px,
 	'md': 768px,

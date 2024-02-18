@@ -41,8 +41,129 @@
     border-bottom: 1px solid var(--extra_grey);
 }
 
-@media (min-width: map-get($laptop, md)) and (max-width: map-get($laptop, tg)) {
+@media (min-width: map-get($laptop, md)) and (max-width: map-get($laptop, tg) - 1) {
     .teams__image {
         display: block;
+    }
+}
+
+@media (min-width: map-get($tablet, md)) and (max-width: map-get($laptop, md) - 1) {
+    .teams__slider {
+        margin-top: 56px;
+    }
+
+    .teams__figure {
+        height: calc(100% - 35px);
+        min-height: unset;
+    }
+
+    .teams__slider {
+        .swiper-scrollbar.swiper-scrollbar-horizontal {
+            margin-top: 40px;
+            display: flex;
+            background-color: var(--gray_95);
+            position: static;
+            height: 8px;
+            max-width: 1544px;
+
+        }
+
+        .swiper-scrollbar-drag {
+            background-color: var(--green);
+            height: 8px;
+            position: static;
+        }
+
+    }
+
+    .teams__list {
+        .swiper__style {
+            display: none;
+        }
+
+        .heading__sign {
+            white-space: unset;
+        }
+    }
+
+    .teams__image {
+        padding-top: 8%;
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+
+    .teams__item {
+        &:first-child {
+            margin-bottom: 24px;
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 24px;
+        }
+
+        &:nth-child(3) {
+            order: 1;
+        }
+
+        &:nth-child(4) {
+            order: 1;
+        }
+    }
+
+    .teams__wrapper {
+        padding-top: unset;
+        justify-content: flex-end;
+    }
+
+    .teams__list {
+        align-items: flex-end;
+    }
+}
+
+@media (min-width: map-get($laptop, md)) {
+    .teams__slider {
+        .swiper-scrollbar {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: map-get($tablet, md) - 1) {
+    .teams {
+        .heading__item--box {
+            margin-top: 20px;
+        }
+
+    }
+    
+    .teams__list {
+        .swiper__list.swiper__style {
+            display: none;
+        }
+        
+        .heading__sign {
+            font-size: 14px;
+            white-space: unset;
+            line-height: 20px;
+        }
+    }
+
+    .teams__slider {
+        .swiper-scrollbar.swiper-scrollbar-horizontal {
+            margin-top: 8px;
+            display: flex;
+            background-color: var(--gray_95);
+            position: static;
+            height: 8px;
+            max-width: 1544px;
+
+        }
+
+        .swiper-scrollbar-drag {
+            background-color: var(--green);
+            height: 8px;
+            position: static;
+        }
+
     }
 }

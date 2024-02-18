@@ -14,10 +14,23 @@ export function teamsSliderInit() {
         prevEl: ".heading__item--flex .swiper__prev",
       },
       breakpoints: {
-        // 320: {
-        //   slidesPerView: 4,
-        //   spaceBetween: 6,
-        // },
+        320: {
+          scrollbar: {
+            slidesPerView: 1,
+            el: ".teams__slider .swiper-scrollbar",
+          },
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
+          scrollbar: {
+            el: ".teams__slider .swiper-scrollbar",
+          },
+        },
         1440: {
           spaceBetween: 24,
           slidesPerView: 3.172,
